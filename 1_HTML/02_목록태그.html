@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록태그</title>
+</head>
+<body>
+    <!-- ul (Unordered List) -->
+    <small><h2>ul : 순서 없는 목록 태그</h2></small>
+    <ul>
+        <li>HTML</li>
+            <!-- ul>li*2 -->
+            <ul>
+                <li>글자태그</li>
+                <li>목록태그</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <h3>중첩으로 가능</h3>
+
+
+    <!-- ol (Ordered List) -->
+    <small><h2>ol : 순서 있는 목록 태그</h2></small>
+    <!-- 
+        - start : 항목의 시작 번호 변경 (기본값 : 1)
+        - type  : 항목 앞에 표시되는 숫자의 종류 변경
+        - reversed : 항목을 역순으로 표시
+    -->
+     <ol start="5" type="i" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+     </ol>
+
+     <hr>
+
+     <h2><small>dl : 설명과 관련된 목록 태그는
+           (주로 용어에 대해 정의할 때)
+     </h2>
+     <!-- 
+        - dl (Description List) : 정의 목록 
+        - dt (Definition  Term) : 목록에 대한 정의
+        - dd (Definition Description) : 정의 목록의 항목
+    --> 
+    <dl>
+      <dt>HTML5</dt>
+        <dd><li>HTML5는 웹에서 정보를 표현할 목적으로 만든 마크업 언어다.</li></dd>
+        <dt>CSS3</dt>
+            <dd><li>HTML5와 함께 웹 표준의 하나다.</li></dd>
+            <dd><li>미리 약속된 스타일 속성을 사용해서 레이아웃과 스타일을 정의한다.</li></dd>
+        
+
+    </dl>
+</body>
+</html>
