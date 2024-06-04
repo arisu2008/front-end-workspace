@@ -1,0 +1,74 @@
+.size-test {
+  height: 1000px;
+  background-color: indianred;
+}
+#fixed-size {
+  width: 1000%;
+}
+.space {
+  position: absolute;
+  top: 150px;
+  left: 750px;
+  width: 200px;
+  height: 200px;
+  background-color: indianred
+  box-sizing: border;
+  width: 400px;
+  height: 500px;
+  border-radius: 3%;
+  border-color: white;
+}
+#border1 {
+  border-style: solid;
+  font-size: 30px;
+  color: white;
+  font: 900;
+  font-family: "Oswald";
+  text-align: center;
+  line-height: 550px;
+  }
+#border2 {
+    width: 335px;
+    height: 65px;
+    left: 785px;
+    top: 470px;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+   font: 900;
+   font-family: "Oswald";
+   text-align: center;
+   line-height: 60px;
+   
+    
+}
+#border3 {
+    width: 335px;
+    height: 65px;
+    left: 785px;
+    top: 560px;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+   font: 900;
+   font-family: "Oswald";
+   text-align: center;
+   line-height: 60px;
+    
+    
+}
+#id {
+    id: 9999;
+    left: 875px;
+    position: absolute;
+    border: 1px solid;
+    height: 175px;
+    width: 175px;
+    top: 175px;
+    border-radius: 50%;
+    background-image: url(../../1_HTML/../resources/bao.jpg);
+    background-size: 80%;
+    background-size: cover;
+    background-size: 195px 195px;      
+}
+

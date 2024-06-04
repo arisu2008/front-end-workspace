@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제3</title>
+</head>
+<body>
+    <h2>주문하기</h2>
+    <form action="">
+        
+        <label for="">고객명 :</label>
+        <input type="text"name="name" ><br>
+        <label for="">전화번호 :</label>
+        <input type="text"name="phone" ><br>
+        <label for="">E-mail :</label>
+        <input type="text"name="email" ><br>
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio"name="size"/> Small </label>        
+            <br /><br>
+            <input type="radio" name="size"/> Medium <br><br>
+            <input type="radio"name="size" value="large"> Large
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <!-- (input:checkbox[name="topping"]+label)*4 -->
+            <input type="checkbox" name="topping" value="bacon"> 베이컨
+            <input type="checkbox" name="topping" value="cheese"> 치즈
+            <input type="checkbox" name="topping" value="onion"> 양파
+            <input type="checkbox" name="topping" value="mushroom"> 버섯
+        </fieldset>
+        <label for="time"> 
+        희망 배송 시간 :             
+        </label>
+         <input type="time"name="time" id="time" ><br><br>
+        
+        배송 시 요청사항 : 
+         <textarea 
+         style="resize :none" type="text"  placeholder="내용을 입력하세요" 
+         cols="30"
+         rows="10">
+        </textarea>
+        <button type="submit" name="memo" value="문 앞에 놓고 가주세요">주문하기</button>
+
+
+        <input type="checkbox" name="topping" id="Q"><label for="">Q</label>
+        <input type="checkbox" name="topping" id="W"><label for="">W</label>
+        <input type="checkbox" name="topping" id="E"><label for="">E</label>
+        <input type="checkbox" name="topping" id="R">R<label for="">
+
+        </label>
+    </form>
+
+    <!-- 
+        name : 서버에 보낼 때 담을 공간명칭
+        value : 서버에 보낼 때 name 공간에 담을 값
+
+        id : 태그의 고유 명칭 부여
+        for : input의 id와 연결
+    -->
+    
+</body>
+</html>
