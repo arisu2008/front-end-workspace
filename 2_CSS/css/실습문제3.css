@@ -1,0 +1,43 @@
+header {
+  background-image: url(../../resources/background.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 400px;
+  height: 100vh;
+  text-decoration: underline;
+  color: white;
+}
+header h2 {
+  font-size: 3rem;
+  color: white;
+}
+header p {
+  display: block;
+}
+main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 400px;
+  background-color: white;
+}
+main h2 {
+  justify-content: flex-start;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main img {
+  width: 500px;
+}
+main p {
+  line-height: 2rem;
+  font-size: 12px;
+}

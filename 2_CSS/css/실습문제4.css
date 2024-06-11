@@ -1,0 +1,30 @@
+.container {
+  background-color: blue;
+  background: linear-gradient(45deg, black, blue);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.square {
+  box-sizing: content-box;
+  width: 4px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 25%;
+  margin: 2px;
+  background: white;
+  color: white;
+  transform: scaleY(2);
+}
+@keyframes boxAni {
+  0% {
+    transform: translateX(3);
+  }
+  20% {
+    transform: translate(10px, 15px);
+  }
+  30% {
+    transform: scaleY(3);
+  }
+}

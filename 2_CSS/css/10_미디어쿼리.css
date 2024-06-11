@@ -1,0 +1,16 @@
+body {
+  background: pink;
+}
+@media screen and (min-width: 500px) {
+  body {
+    background: rgb(255, 141, 160);
+  }
+}
+@media screen and (min-width: 750px) {
+    body {
+      background: rgb(255, 106, 131);
+    }
+    @media screen and (min-width: 1000px) {
+        body {
+          background: rgb(255, 59, 91);
+        }
