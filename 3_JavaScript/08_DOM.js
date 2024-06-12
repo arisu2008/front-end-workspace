@@ -6,16 +6,16 @@ function btn1() {
   const div = document.getElementsByTagName("div");
   console.log(div);
   console.log(div[0]); // <div>Hello, World!</div>
-  console.log(div[1]); // <div>HEllo, JavaScript!</div>
+  console.log(div[1]); // <div>Hello, JavaScript!</div>
 }
 
 function btn2() {
-  const div = document.getElementsBytestId("testId");
+  const div = document.getElementById("testId");
   console.log(div);
 }
 
 function btn3() {
-  // 동일한 class 속성 값을 갖는 태그가 여러개 존재할 수 있기 떄문에 배열로 리턴
+  // 동일한 class 속성 값을 갖는 태그가 여러개 존재할 수 있기 때문에 배열로 리턴
   const div = document.getElementsByClassName("testClass");
   console.log(div);
 }
@@ -31,30 +31,30 @@ function btn5() {
   console.log(div);
   div = document.querySelectorAll("div");
   console.log(div);
-  console.log(div)[1];
+  console.log(div[0]);
 }
 
 function btn6() {
   const div = document.querySelectorAll(".testClass");
   div[0].textContent = "<span>안녕하세요</span>";
-  div[1].innerHtml = "<span>안녕하세요</span>";
+  div[1].innerHTML = "<span>안녕하세요</span>";
   console.log(div[1].innerHTML);
 }
 
 function btn7() {
-  const div = documen.querySelector("#testId");
+  const div = document.querySelector("#testId");
   div.setAttribute("data-test", "테스트");
   div.setAttribute("data-test", "테스트2");
   console.log(div.getAttribute("data-test"));
 }
 
 function btn8() {
-  const div = documen.querySelector("#testId");
+  const div = document.querySelector("#testId");
   div.style.color = "orange";
   div.style.backgroundColor = "yellow";
 }
 
-const div = documen.querySelector("#testId2");
+const div = document.querySelector("#testId2");
 
 function btn9() {
   div.classList.add("black");
@@ -63,7 +63,7 @@ function btn10() {
   div.classList.remove("black");
 }
 function btn11() {
-  console.log(div.classList.contains("black"));
+  const check = div.classList.contains("black");
   if (check) {
     div.classList.remove("black");
   } else {
@@ -71,7 +71,7 @@ function btn11() {
   }
 }
 function btn12() {
-  div.class;
+  div.classList.toggle("black");
 }
 
 function btn13() {
@@ -86,7 +86,7 @@ function btn13() {
 }
 
 function btn14() {
-  const div = document.querySelector("#testId3");
+  const div = document.querySelector("#testId3"); // === p.parentNode
   const p = document.querySelector("p");
   // div.removeChild(p);
   p.parentNode.removeChild(p);
