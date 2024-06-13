@@ -33,15 +33,15 @@
       console.log(scores); // [98, 99, 76, 82]
 
       // 4)
-      scores.shift(scores);
-      scores.shift(scores);
-      scores.splice(0, 0, 30);
+      /*scores.shift(scores);
+      scores.shift(scores);*/
+      scores.splice(0, 2, 30);
       console.log(scores); // [30, 76, 82]
 
       // 5)
-      scores.pop(scores);
-      scores.pop(scores);
-      scores.splice(1, 0, 50);
+     /* scores.pop(scores);
+      scores.pop(scores); */
+      scores.splice(1, 2, 50);
       console.log(scores); // [30, 50]
     </script>
 
@@ -59,8 +59,10 @@
     <!-- Q4. 해당 배열을 오름차순(작은 숫자 ~ 큰 숫자)으로 정렬해주세요  -->
     <script>
       const numbers = [7, -24, -8, 10, 17, -58];
-      const [q, w, v, r, t, y] = numbers;
-      console.log([y, w, v, q, r, t]);
+      /* const [q, w, v, r, t, y] = numbers;
+      console.log([y, w, v, q, r, t]); */
+      numbers.sort((a, b) => a - b);
+      console.log(numbers);
     </script>
   </body>
 </html>
