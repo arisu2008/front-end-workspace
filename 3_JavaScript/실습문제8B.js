@@ -28,3 +28,26 @@ userId.addEventListener("input", function (e) {
     //  "첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로 입력하시오.";
   }
 });
+userPwd.addEventListener("input", function (e) {
+  const regExp = /^[!-~]{8,15}$/;
+  const check = regExp.test(userPwd.value);
+
+  if (check) {
+    userPwdSpan.style.color = "green";
+    userPwdSpan.innerHTML = "ok!";
+  } else {
+    userPwdSpan.style.color = "red";
+    userPwdSpan.innerHTML =
+      "영문자, 숫자, 특수문자 포함하여 총 8~15자로 입력하시오.";
+  }
+});
+
+userPwdCheck.addEventListener("input", function (e) {
+  if (userPwd.value === userPwdCheck.value) {
+    userPwdCheckSpan.style.color = "green";
+    userPwdCheckSpan.innerHTML = "ok!";
+  } else {
+    userPwdCheckSpan.style.color = "red";
+    userPwdCheckSpan.innerHTML = "위의 비밀번호와 일치하게 입력하시오.";
+  }
+});
