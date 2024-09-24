@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "install",
+      "path": "5_React/1-cdn",
+      "group": "clean",
+      "problemMatcher": [],
+      "label": "npm: install - 5_React/1-cdn",
+      "detail": "install dependencies from package"
+    }
+  ]
+}
